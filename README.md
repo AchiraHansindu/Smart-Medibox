@@ -17,7 +17,7 @@ Smart Medibox is a device designed to aid in the effective management of medicat
 - **DHT11 Temperature and Humidity Sensor**: Measures environmental conditions.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/5b833907-1f91-428f-9fa7-e9768b2104ed" width="400" alt="Breadboard Setup.">
+    <img src="https://github.com/user-attachments/assets/5b833907-1f91-428f-9fa7-e9768b2104ed" width="600" alt="Breadboard Setup.">
     <br>
     <em>Breadboard Setup.</em>
 </div>
@@ -71,3 +71,32 @@ This project was developed for the EN2853 - Embedded Systems & Applications cour
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/AchiraHansindu/Smart-Medibox/blob/main/LICENSE) file for details.
+
+# Getting Started
+
+## Prerequisites
+- Git
+- PlatformIO with Arduino Framework Set up
+- Relevant hardware for testing if you are not intending to use simulations
+- Node-RED Installed Environment and an MQTT Broker
+
+![PlatformIo](https://img.shields.io/badge/PlatformIO-5.2.0-blue) ![Node-RED](https://img.shields.io/badge/Node--RED-2.1.3-red) ![MQTT](https://img.shields.io/badge/MQTT-5.1.3-orange) ![VSCode](https://img.shields.io/badge/VSCode-1.60.2-green)
+
+## Medibox Setup
+
+1. Clone the repository:
+    ```bash 
+    git clone https://github.com/AchiraHansindu/Smart-Medibox   
+    ```
+
+2. PlatformIO typically installs required libraries automatically. If not, install them referring to the `configuration.ini` file displayed above.
+
+3. Compile and Upload/Simulate.
+
+## Node-RED Dashboard
+
+1. After completing the above steps, all basic and major functionalities will work, except for the Node-RED based functionalities. Follow these instructions to deploy an instance of the Node-RED Dashboard:
+
+2. Import the [Node Red Flow](https://github.com/AchiraHansindu/Smart-Medibox/blob/main/Stage%202/Node%20Red%20Flow/flows_210204R.json) to the Node-RED canvas.
+
+3. Set up required parameters of the flows including the MQTT server and then deploy. (This is defaulted to the Mosquitto testing server.)
